@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page 1 - Assessment 3 Storytelling</title>
   
-  <!-- Google Font: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
   <style>
     body {
       margin: 0;
-      padding: 50px 20px;
+      padding: 0;
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(-45deg, #d1c4e9, #b2ebf2, #d1c4e9, #b2ebf2);
       background-size: 400% 400%;
@@ -23,49 +26,78 @@
       align-items: center;
       text-align: center;
     }
+
     @keyframes gradientBG {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
 
+    .navbar {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar a {
+      margin: 8px 12px;
+      text-decoration: none;
+      color: #4a148c;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #f3e5f5;
+      transform: scale(1.05);
+    }
+
     header {
       max-width: 900px;
-      margin-bottom: 40px;
+      margin: 40px 20px;
     }
 
     header h1 {
-      font-weight: 600;
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       color: #4a148c;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 1.2rem;
-      line-height: 1.6;
+      color: #555;
       max-width: 700px;
       margin: 0 auto;
-      color: #555;
+      line-height: 1.6;
     }
 
     main {
       max-width: 900px;
-      background: rgba(255 255 255 / 0.9);
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 15px;
       padding: 30px 40px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       color: #3b0061;
       text-align: left;
       line-height: 1.65;
+      margin-bottom: 30px;
     }
 
     main h2 {
-      margin-top: 0;
-      font-weight: 600;
       font-size: 2rem;
-      margin-bottom: 20px;
       color: #6a1b9a;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 600;
     }
 
     main p {
@@ -78,62 +110,79 @@
       height: auto;
       margin: 20px 0;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: block;
     }
 
     .btn-back {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 24px;
-    background-color: #6a1b9a;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #6a1b9a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.3s;
+    }
 
-.btn-back:hover {
-    background-color: #4a148c;
-}
+    .btn-back:hover {
+      background-color: #4a148c;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin: 20px 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
 
     @media (max-width: 600px) {
-      body {
-        padding: 30px 15px;
+      header h1 {
+        font-size: 2rem;
       }
       main {
         padding: 25px 20px;
       }
-      header h1 {
-        font-size: 2rem;
-      }
-      main h2 {
-        font-size: 1.5rem;
+      .navbar {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+    <a href="page4.html">Page 4</a>
+    <a href="page5.html">Page 5</a>
+    <a href="page6.html">Page 6</a>
+    <a href="page7.html">Page 7</a>
+    <a href="page8.html">Page 8</a>
+    <a href="page9.html">Page 9</a>
+  </nav>
+
   <header>
-    <h1>Rising Struggle: Cost of Living Crisis in Australia</h1>
-    <p>This page dives into the factors affecting the rising cost of living in Australia and how it impacts households across the nation.</p>
+    <h1>Cost of Living Crisis - Introduction</h1>
+    <p>Discover the key facts behind Australia's rising living expenses and its wide-ranging impact on society.</p>
   </header>
 
   <main>
-    <h2>Understanding Inflation and Its Effects</h2>
-    <p>Inflation is a significant driver of the cost of living crisis, where prices of essential goods and services increase over time, reducing purchasing power.</p>
-  
-    
-    <p>Recent economic challenges have pushed inflation rates higher than seen in decades, affecting everything from housing to groceries.</p>
-        
-    <p>Families are forced to make tough decisions to manage tighter budgets while coping with rising expenses.</p>
-    
-    <img src="https://insight.factset.com/hs-fs/hubfs/1)Insight/2024/05.2024/05.17.2024_Earnings%20Insight/04-number-of-s%26p-500-companies-citi9ng-inflation-on-earnings-calls-vs-quarterly-cpi.png?width=1344&height=768&name=04-number-of-s%26p-500-companies-citi9ng-inflation-on-earnings-calls-vs-quarterly-cpi.png" />
+    <h2>Overview</h2>
+    <p>The cost of living crisis in Australia has become a significant concern, affecting households, businesses, and the economy as a whole. Everyday essentials such as food, housing, and energy are becoming increasingly expensive, putting pressure on families.</p>
 
+    <p>Understanding the causes and consequences of this crisis is essential to finding long-term solutions that support all Australians.</p>
 
     <a href="index.html" class="btn-back">← Back to Home</a>
-
   </main>
+
+  <footer>
+    &copy; 2024 Rahmah Khaleel | Assessment 3 Storytelling Project
+  </footer>
+
 </body>
 </html>
