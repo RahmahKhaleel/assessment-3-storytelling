@@ -1,136 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page 5 - Assessment 3 Storytelling</title>
-  
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  
-  <style>
-    body {
-      margin: 0;
-      padding: 50px 20px;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(-45deg, #d1c4e9, #b2ebf2, #d1c4e9, #b2ebf2);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      min-height: 100vh;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page 5 - Assessment 3 Storytelling</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #d1c4e9, #b2ebf2, #d1c4e9, #b2ebf2);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
 
-    header {
-      max-width: 900px;
-      margin-bottom: 40px;
-    }
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-    header h1 {
-      font-size: 2.8rem;
-      color: #4a148c;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
+.navbar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-    header p {
-      font-size: 1.2rem;
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
+.navbar a {
+  margin: 8px 12px;
+  text-decoration: none;
+  color: #4a148c;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
 
-    main {
-      max-width: 900px;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 15px;
-      padding: 30px 40px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      color: #3b0061;
-      text-align: left;
-      line-height: 1.65;
-    }
+.navbar a:hover {
+  background-color: #f3e5f5;
+  transform: scale(1.05);
+}
 
-    main h2 {
-      font-size: 2rem;
-      color: #6a1b9a;
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  width: 100%;
+}
 
-    main p {
-      font-size: 1rem;
-      margin-bottom: 1.25rem;
-    }
+.container {
+  background: rgba(255,255,255,0.95);
+  max-width: 800px;
+  width: 100%;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(74,20,140,0.15);
+  text-align: left;
+  color: #3b0061;
+}
 
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: block;
-    }
+h1 {
+  font-size: 2.5rem;
+  color: #4a148c;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
-    .btn-back {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #6a1b9a;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
+p.subtitle {
+  font-size: 1.3rem;
+  color: #6a1b9a;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
 
-    .btn-back:hover {
-      background-color: #4a148c;
-    }
+h2 {
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #6a1b9a;
+  padding-bottom: 6px;
+}
 
-    @media (max-width: 600px) {
-      body {
-        padding: 30px 15px;
-      }
-      main {
-        padding: 25px 20px;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
-      main h2 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  display: block;
+}
+
+.btn-back {
+  display: inline-block;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.btn-back:hover {
+  background-color: #4a148c;
+  transform: scale(1.05);
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .container { padding: 30px 20px; }
+}
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Social Consequences of the Cost of Living Crisis</h1>
-    <p>Understanding how economic challenges affect mental health, relationships, and overall community wellbeing.</p>
-  </header>
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="page1.html">Page 1</a>
+  <a href="page2.html">Page 2</a>
+  <a href="page3.html">Page 3</a>
+  <a href="page4.html">Page 4</a>
+  <a href="page5.html">Page 5</a>
+  <a href="page6.html">Page 6</a>
+  <a href="page7.html">Page 7</a>
+  <a href="page8.html">Page 8</a>
+  <a href="page9.html">Page 9</a>
+  <a href="page10.html">References</a>
+</nav>
 
-  <main>
-    <h2>Rising Stress and Anxiety</h2>
-    <p>The financial pressures of increasing costs are leading to higher levels of stress and mental health struggles across the population.</p>
+<main>
+  <div class="container">
+    <h1>Transport and Fuel Costs</h1>
+    <p class="subtitle">The increasing cost of transport adds significant pressure on families and workers.</p>
 
-    <p>Families face tough choices regarding basic needs, which can strain relationships and overall wellbeing.</p>
-    <p>Support services and community programs are vital to help individuals navigate these challenges, but more long-term solutions are needed.</p>
+    <h2>Rising Fuel Prices</h2>
+    <p>Fuel prices have risen steadily, making commuting and goods transportation more expensive. This leads to higher prices for consumer products and services throughout the economy.</p>
+
+    <p>Higher transport costs can limit access to employment, education, and essential services, especially in rural areas where public transport options are limited.</p>
 
     <a href="index.html" class="btn-back">← Back to Home</a>
-  </main>
+  </div>
+</main>
+
+<footer>
+  &copy; 2024 Rahmah Khaleel | Assessment 3 Storytelling Project
+</footer>
 
 </body>
 </html>
