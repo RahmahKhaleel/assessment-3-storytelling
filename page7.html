@@ -1,62 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page 7</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 7 - Assessment 3 Storytelling</title>
 
-    <!-- Google Font: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 50px;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-            min-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #000000;
-        }
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-        h1 {
-            color: #e65100;
-            font-size: 2.5rem;
-            margin-bottom: 2px;
-        }
+  <style>
+    body {
+      margin: 0;
+      padding: 50px 20px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(-45deg, #d1c4e9, #b2ebf2, #d1c4e9, #b2ebf2);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      min-height: 100vh;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
-        p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 40px;
-        }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 
-        a.button {
-            text-decoration: none;
-            background: #e65100;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background 0.3s;
-            margin-top: 30px;
-        }
+    header {
+      max-width: 900px;
+      margin-bottom: 40px;
+    }
 
-        a.button:hover {
-            background: #ff9800;
-        }
-    </style>
+    header h1 {
+      font-size: 2.8rem;
+      color: #4a148c;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      color: #3b0061;
+      text-align: left;
+      line-height: 1.65;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      color: #6a1b9a;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    main p {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: block;
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #6a1b9a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #4a148c;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 30px 15px;
+      }
+      main {
+        padding: 25px 20px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      main h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Conclusion</h1>
 
-<p>The data clearly shows that Australia's cost of living has risen, with noticeable impacts on essential goods, housing, and daily expenses. Understanding these trends is crucial for policymakers, businesses, and citizens as they work towards solutions that protect people's financial wellbeing.</p>
+  <header>
+    <h1>Community Support and Initiatives</h1>
+    <p>Exploring how local communities and organisations are providing assistance during the cost of living crisis.</p>
+  </header>
 
+  <main>
+    <h2>Grassroots Support Programs</h2>
+    <p>Across Australia, community groups, charities, and volunteers are stepping up to support those most affected by the rising cost of living.</p>
 
-    <a href="index.html" class="button">← Back to Home</a>
+    <p>From food banks to financial counselling services, these initiatives play a critical role in relieving immediate hardships and fostering resilience.</p>
+    <p>Ongoing collaboration between communities and policymakers is essential to develop sustainable, long-term solutions.</p>
+
+    <a href="index.html" class="btn-back">← Back to Home</a>
+  </main>
 
 </body>
 </html>
