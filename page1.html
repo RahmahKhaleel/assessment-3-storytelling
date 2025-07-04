@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Page 1 - Assessment 3 Storytelling</title>
-  
+
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
   <style>
     body {
@@ -33,6 +33,7 @@
       100% { background-position: 0% 50%; }
     }
 
+    /* Navigation bar */
     .navbar {
       width: 100%;
       background: rgba(255, 255, 255, 0.8);
@@ -61,69 +62,68 @@
       transform: scale(1.05);
     }
 
-    header {
-      max-width: 900px;
-      margin: 40px 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #4a148c;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 900px;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 15px;
-      padding: 30px 40px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      color: #3b0061;
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      max-width: 800px;
+      width: 100%;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(74, 20, 140, 0.15);
+      margin: 40px 20px 60px;
       text-align: left;
-      line-height: 1.65;
-      margin-bottom: 30px;
+      color: #3b0061;
     }
 
-    main h2 {
-      font-size: 2rem;
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 5px;
+      color: #4a148c;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p.subtitle {
+      font-size: 1.3rem;
       color: #6a1b9a;
-      margin-top: 0;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    h2 {
+      font-size: 2rem;
       margin-bottom: 20px;
       font-weight: 600;
+      border-bottom: 2px solid #6a1b9a;
+      padding-bottom: 6px;
     }
 
-    main p {
+    p {
       font-size: 1rem;
-      margin-bottom: 1.25rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
 
     img {
       max-width: 100%;
       height: auto;
-      margin: 20px 0;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 20px 0;
       display: block;
     }
 
     .btn-back {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
       background-color: #6a1b9a;
-      color: #fff;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: 600;
-      border-radius: 8px;
-      transition: background-color 0.3s ease, transform 0.3s;
+      transition: background-color 0.3s, transform 0.3s;
+      margin-top: 20px;
     }
 
     .btn-back:hover {
@@ -131,28 +131,22 @@
       transform: scale(1.05);
     }
 
-    footer {
-      margin: 20px 0;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+      h1 {
+        font-size: 2.2rem;
       }
-      main {
-        padding: 25px 20px;
+      h2 {
+        font-size: 1.6rem;
       }
-      .navbar {
-        flex-direction: column;
+      .container {
+        padding: 30px 20px;
+        margin: 20px 10px 40px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
   <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="page1.html">Page 1</a>
@@ -164,26 +158,22 @@
     <a href="page7.html">Page 7</a>
     <a href="page8.html">Page 8</a>
     <a href="page9.html">Page 9</a>
-    <a href="page10.html">Reference</a>
+    <a href="page10.html">References</a>
   </nav>
 
-  <header>
+  <div class="container">
     <h1>Cost of Living Crisis - Introduction</h1>
-    <p>Discover the key facts behind Australia's rising living expenses and its wide-ranging impact on society.</p>
-  </header>
+    <p class="subtitle">Discover the key facts behind Australia's rising living expenses and its wide-ranging impact on society.</p>
 
-  <main>
     <h2>Overview</h2>
     <p>The cost of living crisis in Australia has become a significant concern, affecting households, businesses, and the economy as a whole. Everyday essentials such as food, housing, and energy are becoming increasingly expensive, putting pressure on families.</p>
+
+    <img src="images/cost-living.jpg" alt="Cost of Living Image" />
 
     <p>Understanding the causes and consequences of this crisis is essential to finding long-term solutions that support all Australians.</p>
 
     <a href="index.html" class="btn-back">← Back to Home</a>
-  </main>
-
-  <footer>
-    &copy; 2024 Rahmah Khaleel | Assessment 3 Storytelling Project
-  </footer>
+  </div>
 
 </body>
 </html>
