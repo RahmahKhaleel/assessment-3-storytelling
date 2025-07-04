@@ -1,62 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page 4</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page 4 - Assessment 3 Storytelling</title>
 
-    <!-- Google Font: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 50px;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-            min-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #000000;
-        }
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-        h1 {
-            color: #e65100;
-            font-size: 2.5rem;
-            margin-bottom: 2px;
-        }
-        p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 40px;
-        }
+  <style>
+    body {
+      margin: 0;
+      padding: 50px 20px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(-45deg, #d1c4e9, #b2ebf2, #d1c4e9, #b2ebf2);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      min-height: 100vh;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 
-        a.button {
-            text-decoration: none;
-            background: #e65100;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background 0.3s;
-            margin-top: 30px;
-        }
+    header {
+      max-width: 900px;
+      margin-bottom: 40px;
+    }
 
-        a.button:hover {
-            background: #ff9800;
-        }
-    </style>
+    header h1 {
+      font-weight: 600;
+      font-size: 2.8rem;
+      color: #4a148c;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    main {
+      max-width: 900px;
+      background: rgba(255 255 255 / 0.9);
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      color: #3b0061;
+      text-align: left;
+      line-height: 1.65;
+    }
+
+    main h2 {
+      margin-top: 0;
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #6a1b9a;
+    }
+
+    main p {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: block;
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #6a1b9a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-back:hover {
+      background-color: #4a148c;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 30px 15px;
+      }
+      main {
+        padding: 25px 20px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      main h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Mortgage Pressure & Interest Rates</h1>
-    <p>RBA raised rate 13 times (2022–2024)</p>
-    <p> Repayments doubled</p>
-    <p>First-home buyers delaying entry</p>
+  <header>
+    <h1>Living Expenses &amp; Inflation</h1>
+    <p>Exploring the impact of inflation on essential living expenses and how it affects Australian households.</p>
+  </header>
+
+  <main>
+    <h2>Essential Costs on the Rise</h2>
+    <p>The prices of food, energy, and housing have surged, putting significant pressure on household budgets.</p>
     
-    <a href="index.html" class="button">← Back to Home</a>
+    <img src="https://i0.wp.com/fastercapital.com/i/Inflationary-pressures--The-Rising-Costs-of-Living-in-a-Sluggish-Economy--The-Impact-of-Inflation-on-Cost-of-Living.webp?w=1290&ssl=1" alt="Living Expenses and Inflation" />
+    
+    <p>Many households are forced to prioritise spending, cutting down on discretionary items to cover essentials.</p>
+    <p>This shift has broad economic and social implications, influencing overall consumer behaviour.</p>
 
-
+    <a href="index.html" class="btn-back">← Back to Home</a>
+  </main>
 </body>
 </html>
