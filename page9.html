@@ -1,134 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page 9 - Assessment 3 Storytelling</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      padding: 50px 20px;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(-45deg, #d1c4e9, #b2ebf2, #d1c4e9, #b2ebf2);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      min-height: 100vh;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    header {
-      max-width: 900px;
-      margin-bottom: 40px;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      color: #4a148c;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 900px;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 15px;
-      padding: 30px 40px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      color: #3b0061;
-      text-align: left;
-      line-height: 1.65;
-    }
-
-    main h2 {
-      font-size: 2rem;
-      color: #6a1b9a;
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-
-    main p {
-      font-size: 1rem;
-      margin-bottom: 1.25rem;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: block;
-    }
-
-    .btn-back {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #6a1b9a;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn-back:hover {
-      background-color: #4a148c;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 30px 15px;
-      }
-      main {
-        padding: 25px 20px;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
-      main h2 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page 9 - Assessment 3 Storytelling</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #d1c4e9, #b2ebf2, #d1c4e9, #b2ebf2);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+  }
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .navbar {
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .navbar a {
+    margin: 8px 12px;
+    text-decoration: none;
+    color: #4a148c;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .navbar a:hover {
+    background-color: #f3e5f5;
+    transform: scale(1.05);
+  }
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    width: 100%;
+  }
+  .container {
+    background: rgba(255,255,255,0.95);
+    max-width: 800px;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(74,20,140,0.15);
+    text-align: left;
+    color: #3b0061;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #4a148c;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  p.subtitle {
+    font-size: 1.3rem;
+    color: #6a1b9a;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: 2rem;
+    color: #6a1b9a;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #6a1b9a;
+    padding-bottom: 6px;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    display: block;
+  }
+  .btn-back {
+    display: inline-block;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+  }
+  .btn-back:hover {
+    background-color: #4a148c;
+    transform: scale(1.05);
+  }
+  footer {
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    .container { padding: 30px 20px; }
+  }
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Call to Action: Building a Better Future</h1>
-    <p>Encouraging collective efforts to address the cost of living crisis and create lasting positive change.</p>
-  </header>
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="page1.html">Page 1</a>
+  <a href="page2.html">Page 2</a>
+  <a href="page3.html">Page 3</a>
+  <a href="page4.html">Page 4</a>
+  <a href="page5.html">Page 5</a>
+  <a href="page6.html">Page 6</a>
+  <a href="page7.html">Page 7</a>
+  <a href="page8.html">Page 8</a>
+  <a href="page9.html">Page 9</a>
+  <a href="page10.html">References</a>
+</nav>
 
-  <main>
-    <h2>What Can We Do?</h2>
-    <p>Everyone has a role to play in alleviating the cost of living crisis—from supporting local initiatives to advocating for fair policies and sustainable economic solutions.</p>
-    <p>By staying informed, supporting vulnerable communities, and promoting systemic change, we can help build a more equitable and resilient future for all Australians.</p>
+<main>
+  <div class="container">
+    <h1>Education and Living Costs</h1>
+    <p class="subtitle">The rising expenses for education add to the burden on families and students.</p>
+
+    <h2>Financial Challenges</h2>
+    <p>Increased tuition fees, textbooks, and living expenses make education less accessible for many Australians, especially those from disadvantaged backgrounds.</p>
+
+    <p>Students often juggle multiple jobs or incur debt to manage costs, impacting academic success and wellbeing.</p>
 
     <a href="index.html" class="btn-back">← Back to Home</a>
-  </main>
+  </div>
+</main>
+
+<footer>
+  &copy; 2024 Rahmah Khaleel | Assessment 3 Storytelling Project
+</footer>
 
 </body>
 </html>
