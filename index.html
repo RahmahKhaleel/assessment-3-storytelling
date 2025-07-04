@@ -3,182 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Page 10 - Assessment 3 Storytelling</title>
+  <title>Home - Assessment 3 Storytelling</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-
   <style>
+    /* Background animation */
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(-45deg, #d1c4e9, #b2ebf2, #d1c4e9, #b2ebf2);
       background-size: 400% 400%;
       animation: gradientBG 15s ease infinite;
       min-height: 100vh;
-      color: #333;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      padding: 40px 20px;
+      color: #4a148c;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Container card */
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      max-width: 700px;
+      width: 100%;
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(74, 20, 140, 0.2);
       text-align: center;
     }
 
-    @keyframes gradientBG {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    .navbar {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.8);
-      padding: 15px 20px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .navbar a {
-      margin: 8px 12px;
-      text-decoration: none;
-      color: #4a148c;
-      font-weight: 600;
-      padding: 8px 14px;
-      border-radius: 6px;
-      transition: background-color 0.3s, transform 0.3s;
-    }
-
-    .navbar a:hover {
-      background-color: #f3e5f5;
-      transform: scale(1.05);
-    }
-
-    header {
-      max-width: 900px;
-      margin: 40px 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #4a148c;
+    h1 {
+      font-size: 3rem;
       margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
 
-    header p {
-      font-size: 1.2rem;
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 900px;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 15px;
-      padding: 30px 40px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      color: #3b0061;
-      text-align: left;
-      line-height: 1.65;
-      margin-bottom: 30px;
-    }
-
-    main h2 {
-      font-size: 2rem;
+    h2 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin-bottom: 40px;
       color: #6a1b9a;
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-weight: 600;
+      line-height: 1.3;
     }
 
-    main p {
-      font-size: 1rem;
-      margin-bottom: 1.25rem;
+    /* Grid of links */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 20px;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: block;
-    }
-
-    .btn-back {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #6a1b9a;
-      color: #fff;
+    .grid a {
+      background: #6a1b9a;
+      color: white;
       text-decoration: none;
+      padding: 25px 15px;
+      border-radius: 15px;
       font-weight: 600;
-      border-radius: 8px;
-      transition: background-color 0.3s ease, transform 0.3s;
+      font-size: 1.1rem;
+      box-shadow: 0 5px 15px rgba(106, 27, 154, 0.4);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .btn-back:hover {
-      background-color: #4a148c;
+    .grid a:hover {
+      background: #4a148c;
       transform: scale(1.05);
     }
 
-    footer {
-      margin: 20px 0;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
+    /* Responsive font sizes */
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+      h1 {
+        font-size: 2.2rem;
       }
-      main {
-        padding: 25px 20px;
+      h2 {
+        font-size: 1.2rem;
       }
-      .navbar {
-        flex-direction: column;
+      .grid a {
+        font-size: 1rem;
+        padding: 20px 10px;
       }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Assessment 3 Storytelling</h1>
+    <h2>Exploring the Rising Struggle: The Cost of Living Crisis in Australia</h2>
 
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="page1.html">Page 1</a>
-    <a href="page2.html">Page 2</a>
-    <a href="page3.html">Page 3</a>
-    <a href="page4.html">Page 4</a>
-    <a href="page5.html">Page 5</a>
-    <a href="page6.html">Page 6</a>
-    <a href="page7.html">Page 7</a>
-    <a href="page8.html">Page 8</a>
-    <a href="page9.html">Page 9</a>
-    <a href="page10.html">Page 10</a>
-  </nav>
-
-  <main>
-    <h2>Moving Forward Together</h2>
-    <p>This final page can highlight calls to action, resources for support, or future outlooks related to your project.</p>
-
-  <footer>
-    &copy; 2024 Rahmah Khaleel | Assessment 3 Storytelling Project
-  </footer>
-
+    <div class="grid">
+      <a href="page1.html">Page 1</a>
+      <a href="page2.html">Page 2</a>
+      <a href="page3.html">Page 3</a>
+      <a href="page4.html">Page 4</a>
+      <a href="page5.html">Page 5</a>
+      <a href="page6.html">Page 6</a>
+      <a href="page7.html">Page 7</a>
+      <a href="page8.html">Page 8</a>
+      <a href="page9.html">Page 9</a>
+      <a href="page10.html">References</a>
+    </div>
+  </div>
 </body>
 </html>
